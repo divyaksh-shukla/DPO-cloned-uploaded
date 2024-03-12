@@ -1,0 +1,9 @@
+- model=gemma-2b
+- datasets=[hh]
+- loss=sft
+- exp_name=google_dpo_gemma2b
+- gradient_accumulation_steps=2
+- batch_size=64
+- eval_batch_size=32
+- trainer=FSDPTrainer
+- sample_during_eval=false
